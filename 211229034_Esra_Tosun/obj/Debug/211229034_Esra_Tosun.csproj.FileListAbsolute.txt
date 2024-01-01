@@ -1,0 +1,10 @@
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\bin\Debug\211229034_Esra_Tosun.exe.config
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\bin\Debug\211229034_Esra_Tosun.exe
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\bin\Debug\211229034_Esra_Tosun.pdb
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\211229034_Esra_Tosun.csproj.AssemblyReference.cache
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\_211229034_Esra_Tosun.Properties.Resources.resources
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\211229034_Esra_Tosun.csproj.GenerateResource.cache
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\211229034_Esra_Tosun.csproj.CoreCompileInputs.cache
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\211229034_Esra_Tosun.exe
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\211229034_Esra_Tosun.pdb
+C:\Users\esrat\Dersler\GuzDonemi\IsletimSistemleri\Vize\Odev\211229034_Esra_Tosun\211229034_Esra_Tosun\obj\Debug\_211229034_Esra_Tosun.Form1.resources
