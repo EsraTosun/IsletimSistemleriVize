@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,9 @@ namespace _211229034_Esra_Tosun
         List<int> sayilarListesi3 = new List<int>();
         List<int> sayilarListesi4 = new List<int>();
 
-        List<int> ciftSayilarList = new List<int>();
-        List<int> tekSayilarList = new List<int>();
-        List<int> asalSayilarList = new List<int>();
+        public static BindingList<int> ciftSayilarList = new BindingList<int>();
+        public static BindingList<int> tekSayilarList = new BindingList<int>();
+        public static BindingList<int> asalSayilarList = new BindingList<int>();
 
         private static object kilit1 = new object();
         private static object kilit2 = new object();
@@ -71,7 +72,7 @@ namespace _211229034_Esra_Tosun
             stopwatch3.Start(); // Kronometreyi başlat
             stopwatch4.Start(); // Kronometreyi başlat
 
-            /* thread1.Join();
+            thread1.Join();
             thread2.Join();
             thread3.Join();
             thread4.Join();
@@ -79,9 +80,9 @@ namespace _211229034_Esra_Tosun
             thread1.Abort();
             thread2.Abort();
             thread3.Abort();
-            thread4.Abort();  */
+            thread4.Abort();  
 
-            //Console.WriteLine("Asal Sayılar");
+            Console.WriteLine(ciftSayilarList.Count);
             //ListeYazdir(asalSayilarList);
 
 
@@ -129,7 +130,7 @@ namespace _211229034_Esra_Tosun
                         tekSayilarList.Add(sayilarListesi1[i]);
                     }
                 }
-                for (int k = 2; k < sayilarListesi1[i] / 2; k++)
+                for (int k = 2; k <= sayilarListesi1[i] / 2; k++)
                 {
                     if (sayilarListesi1[i] % k == 0)
                     {
@@ -137,7 +138,7 @@ namespace _211229034_Esra_Tosun
                         break;
                     }
                 }
-                if (kontrol == 0)
+                if (kontrol == 0 & sayilarListesi1[i] != 0 & sayilarListesi1[i] != 1)
                 {
                     lock (kilit3)
                     {
@@ -175,7 +176,7 @@ namespace _211229034_Esra_Tosun
                         tekSayilarList.Add(sayilarListesi2[i]);
                     }
                 }
-                for (int k = 2; k < sayilarListesi2[i] / 2; k++)
+                for (int k = 2; k <= sayilarListesi2[i] / 2; k++)
                 {
                     if (sayilarListesi2[i] % k == 0)
                     {
@@ -183,7 +184,7 @@ namespace _211229034_Esra_Tosun
                         break;
                     }
                 }
-                if (kontrol == 0)
+                if (kontrol == 0 & sayilarListesi2[i] != 0 & sayilarListesi2[i] != 1)
                 {
                     lock (kilit3)
                     {
@@ -220,7 +221,7 @@ namespace _211229034_Esra_Tosun
                         tekSayilarList.Add(sayilarListesi3[i]);
                     }
                 }
-                for (int k = 2; k < sayilarListesi3[i] / 2; k++)
+                for (int k = 2; k <= sayilarListesi3[i] / 2; k++)
                 {
                     if (sayilarListesi3[i] % k == 0)
                     {
@@ -228,7 +229,7 @@ namespace _211229034_Esra_Tosun
                         break;
                     }
                 }
-                if (kontrol == 0)
+                if (kontrol == 0 & sayilarListesi3[i] != 0 & sayilarListesi3[i] != 1)
                 {
                     lock (kilit3)
                     {
@@ -265,7 +266,7 @@ namespace _211229034_Esra_Tosun
                         tekSayilarList.Add(sayilarListesi4[i]);
                     }
                 }
-                for (int k = 2; k < sayilarListesi4[i] / 2; k++)
+                for (int k = 2; k <= sayilarListesi4[i] / 2; k++)
                 {
                     if (sayilarListesi4[i] % k == 0)
                     {
@@ -273,7 +274,7 @@ namespace _211229034_Esra_Tosun
                         break;
                     }
                 }
-                if (kontrol == 0)
+                if (kontrol == 0 & sayilarListesi4[i] != 0 & sayilarListesi4[i] != 1)
                 {
                     lock (kilit3)
                     {
@@ -297,6 +298,7 @@ namespace _211229034_Esra_Tosun
                 Console.WriteLine(list[i]);
             }
         }
+
 
     }
 }
