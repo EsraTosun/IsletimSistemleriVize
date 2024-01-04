@@ -67,6 +67,11 @@ namespace _211229034_Esra_Tosun
             thread3.Start();
             thread4.Start();
 
+            stopwatch1.Reset();
+            stopwatch2.Reset();
+            stopwatch3.Reset();
+            stopwatch4.Reset();
+
             stopwatch1.Start(); // Kronometreyi başlat
             stopwatch2.Start(); // Kronometreyi başlat
             stopwatch3.Start(); // Kronometreyi başlat
@@ -77,10 +82,11 @@ namespace _211229034_Esra_Tosun
             thread3.Join();
             thread4.Join();
 
-            thread1.Abort();
-            thread2.Abort();
-            thread3.Abort();
-            thread4.Abort();  
+            // Thread'lerin işi tamamlandığında güvenli bir şekilde sonlandırın
+            SafeAbortThread(thread1);
+            SafeAbortThread(thread2);
+            SafeAbortThread(thread3);
+            SafeAbortThread(thread4);
 
             Console.WriteLine(ciftSayilarList.Count);
             //ListeYazdir(asalSayilarList);
@@ -88,6 +94,15 @@ namespace _211229034_Esra_Tosun
 
 
             GC.Collect();
+        }
+
+        static void SafeAbortThread(Thread thread)
+        {
+            if (thread != null && thread.IsAlive)
+            {
+                thread.Abort();
+                Console.WriteLine($"Thread {thread.ManagedThreadId} güvenli bir şekilde sonlandırıldı.");
+            }
         }
 
         public void SayilarListesiBol()
