@@ -103,59 +103,6 @@ namespace _211229034_Esra_Tosun
             watch.Stop();
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            ThreadCalistir threadCalistir = new ThreadCalistir();
-            threadCalistir.ThreadleriCalistir();
-
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("Elemanlar", typeof(string));
-
-
-            // DataTable'e liste elemanlarını eklemek
-            foreach (var eleman in ThreadCalistir.asalSayilarList)
-            {
-                dataTable.Rows.Add(eleman);
-            }
-
-            // DataGridView'e DataTable'ı eklemek
-            dataGridView1.DataSource = dataTable;
-
-            // Elemanlar ekledikten veya çıkardıktan sonra
-            Console.WriteLine("aaaaaaaaaaa");
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = dataTable;
-
-            DataTable dataTable2 = new DataTable();
-            dataTable2.Columns.Add("Elemanlar", typeof(string));
-
-
-            // DataTable'e liste elemanlarını eklemek
-            foreach (var eleman in ThreadCalistir.ciftSayilarList)
-            {
-                dataTable2.Rows.Add(eleman);
-            }
-
-            dataGridView2.DataSource = null;
-            dataGridView2.DataSource = dataTable2;
-
-            DataTable dataTable3 = new DataTable();
-            dataTable3.Columns.Add("Elemanlar", typeof(string));
-
-
-            // DataTable'e liste elemanlarını eklemek
-            foreach (var eleman in ThreadCalistir.tekSayilarList)
-            {
-                dataTable3.Rows.Add(eleman);
-            }
-
-            dataGridView3.DataSource = null;
-            dataGridView3.DataSource = dataTable3;
-            Console.WriteLine("aaaaaaaaaaa");
-
-
-
-        }  */
 
         private void DataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
